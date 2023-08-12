@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-int digit1 = 0, digit2, digit3;
+int digit1 = 0, digit2;
 while (digit1 <= 99)
 {
 digit2 = digit1;
