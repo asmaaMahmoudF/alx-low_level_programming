@@ -1,16 +1,14 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - function that will print the alphapet 10 times
+ *_islower - function to check if character is lowercase
+ *@c : check input of function
+ *return : returns 1 if `c` is lowercase otherwise always 0 (Success)
 */
-void print_alphabet_x10(void)
+int _islower(int c)
 {
-int i, ch;
-for (ch = 0 ; ch <= 9 ; ch++)
+if (c >= 97 &&  c <= 122)
 {
-for (i = 'a'; i <= 'z'; i++)
-{
-_putchar(i);
+return (1);
 }
-_putchar('\n');
-}
+return (0);
 }
