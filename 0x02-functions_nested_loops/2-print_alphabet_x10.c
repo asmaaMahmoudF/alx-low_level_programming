@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * print_alphabet - utilizes on the _putchar function to print
- * the alphapet a - z
+ * print_alphabet_x10 - function that will print the alphapet 10 times
 */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 int i, ch;
 for (ch = 0 ; ch <= 9 ; ch++)
