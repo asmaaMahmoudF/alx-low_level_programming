@@ -5,7 +5,7 @@
 */
 void times_table(void)
 {
-int i, n;
+int i, n, prod;
 for (i = 0; i <= 9; i++)
 {
 _putchar(48);
