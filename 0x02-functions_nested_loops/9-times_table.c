@@ -11,7 +11,7 @@ for (i = 0; i <= 9; i++)
 _putchar(48);
 for (n = 1; n <= 9; n++)
 {
-_putchar('.');
+_putchar(',');
 _putchar(' ');
 prod = n * i;
 /*
