@@ -13,15 +13,15 @@ if (sum > 98)
 {
 for (sum = n ; sum > 98 ; sum--)
 {
-printf("%d, ", count);
+printf("%d, ", sum);
 }
 }
 else
 {
 for (sum = n ; sum < 98 ; sum++)
 {
-printf("%d, ", count);
+printf("%d, ", sum);
 }
 }
-print("98\n");
+printf("98\n");
 }
