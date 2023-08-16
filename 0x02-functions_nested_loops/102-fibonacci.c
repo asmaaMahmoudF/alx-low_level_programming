@@ -12,7 +12,7 @@ unsigned long f1, f2, sum;
 for (count = 0; count < 50; count++)
 {
 sum = f1 + f2;
-printf("%ul", sum);
+printf("%lu", sum);
 f1 = f2;
 f2 = sum;
 if (count == 49)
