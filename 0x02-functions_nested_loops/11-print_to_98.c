@@ -9,14 +9,14 @@
 void print_to_98(int n)
 {
 int sum = 0;
-if (sum > 98)
+if (n >= 98)
 {
 for (sum = n ; sum > 98 ; sum--)
 {
 printf("%d, ", sum);
 }
 }
-else
+else if (n <= 98)
 {
 for (sum = n ; sum < 98 ; sum++)
 {
