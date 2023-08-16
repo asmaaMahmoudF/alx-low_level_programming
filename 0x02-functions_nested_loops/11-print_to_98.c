@@ -8,7 +8,7 @@
 */
 void print_to_98(int n)
 {
-int sum;
+int sum = 0;
 if (sum > 98)
 {
 for (sum = n ; sum > 98 ; sum--)
