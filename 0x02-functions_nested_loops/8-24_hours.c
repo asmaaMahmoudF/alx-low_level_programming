@@ -1,7 +1,9 @@
 #include "main.h"
 /**
-* jack_bauer the entry point of file 
+* jack_bauer - entry point
+*
 * Description: prints every minute of the day
+*
 * Return: void
 */
 void jack_bauer(void)
