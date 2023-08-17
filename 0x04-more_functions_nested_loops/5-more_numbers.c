@@ -3,7 +3,7 @@
 /**
  * more_numbers -Entry point
 * Description: more_numbers prints numbers
-* except 2 & 4
+* from 0 to 14
 *
 * Return: void
 */
@@ -23,6 +23,6 @@ num = j % 10;
 }
 _putchar(num + 48);
 }
-}
 _putchar('\n');
+}
 }
