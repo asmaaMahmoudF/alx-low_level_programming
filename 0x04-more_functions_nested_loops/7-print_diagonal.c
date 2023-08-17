@@ -14,9 +14,9 @@ if (n <= 0)
 _putchar('\n');
 else
 {
-for (cal = 0; cal <= n; cal++)
+for (cal = 1; cal <= n; cal++)
 {
-for (row = 0; row <= cal; row++)
+for (row = 1; row <= cal; row++)
 _putchar(32);/* is equal to ' ' char*/
 _putchar(92);/* is equal to '/' char*/
 _putchar('\n');
