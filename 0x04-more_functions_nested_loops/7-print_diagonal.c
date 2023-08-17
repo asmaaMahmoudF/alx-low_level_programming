@@ -16,9 +16,9 @@ _putchar('\n');
 }
 else
 {
-for (cal = 0; cal <= n; cal++)
+for (cal = 1; cal <= n; cal++)
 {
-for (row = 0; cal <= cal; row++)
+for (row = 1; cal <= cal; row++)
 {
 _putchar(' ');
 }
