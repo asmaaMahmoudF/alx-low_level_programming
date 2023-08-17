@@ -20,7 +20,7 @@ for (cal = 1; cal <= n; cal++)
 {
 for (row = 1; row <= cal; row++)
 {
-_putchar(' ');
+_putchar(32);
 }
 _putchar(92);
 _putchar('\n');
