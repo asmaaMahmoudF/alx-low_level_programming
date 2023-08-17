@@ -14,7 +14,7 @@ if (size <= 0)
 {
 _putchar('\n');
 }
-else
+else if ( size > 0)
 {
 for (i = 1; i <= size; i++)
 {
