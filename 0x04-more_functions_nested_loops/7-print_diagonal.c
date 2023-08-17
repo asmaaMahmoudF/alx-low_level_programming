@@ -9,14 +9,14 @@
 
 void print_diagonal(int n)
 {
-int cal, row;
+int cl, row;
 if (n <= 0)
 {
 _putchar('\n');
 }
 else
 {
-for (cal = 1; cal <= n; cal++)
+for (cl = 1; cl <= n; cl++)
 {
 for (row = 1; cal <= cal; row++)
 {
