@@ -12,7 +12,7 @@ void print_diagonal(int n)
 int cal, row;
 if (n <= 0)
 _putchar('\n');
-else if (n > 0)
+else
 {
 for (cal = 1; cal <= n; cal++)
 {
