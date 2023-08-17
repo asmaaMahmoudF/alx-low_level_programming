@@ -22,5 +22,6 @@ _putchar(92);/* is equal to '/' char*/
 _putchar('\n');
 }
 }
+_putchar('\n');
 }
 
