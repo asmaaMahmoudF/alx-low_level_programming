@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
-* _isupper Entry - point
-*
-* Description: check if c is upper
+ * _isupper -Entry point
+* Description: _isupper check if c is upper
 *
 * @c: input
 *
