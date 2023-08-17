@@ -17,7 +17,9 @@ _putchar(95);
 n--;
 }
 }
-else
+else if (n <= 0)
+{
 _putchar('\n');
+}
 _putchar('\n');
 }
