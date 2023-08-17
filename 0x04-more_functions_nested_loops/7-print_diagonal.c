@@ -17,8 +17,8 @@ else
 for (cal = 0; cal <= n; cal++)
 {
 for (row = 0; row <= cal; row++)
-_putchar(32);
-_putchar(92);
+_putchar(32);/* is equal to ' ' char*/
+_putchar(92);/* is equal to '/' char*/
 _putchar('\n');
 }
 }
