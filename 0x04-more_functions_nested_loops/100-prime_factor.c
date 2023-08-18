@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
 * _sqrt -Entry point
 * Description: finds the squre root
