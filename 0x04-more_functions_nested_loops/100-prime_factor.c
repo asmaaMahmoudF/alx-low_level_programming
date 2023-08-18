@@ -6,7 +6,7 @@
 * Return: the squre of size
 */
 
-void _sqrt(double size)
+double _sqrt(double size)
 {
 float sqr, tmp;
 sqr = size / 2;
