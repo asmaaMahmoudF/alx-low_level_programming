@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal -Entry point
+* print_diagonal -Entry point
 * Description: print_diagonal draws a diagonal line
 * @n: input
 * Return: void
