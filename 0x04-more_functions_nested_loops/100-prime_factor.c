@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _sqrt -Entry point
+* _sqrt -kdlksnsdnls
 * Description: finds the squre root
 * @size: input
 * Return: the squre of size
@@ -19,7 +19,7 @@ sqr = (size / tmp + tmp) / 2;
 return (sqr);
 }
 /**
-* largest_prime_factor -Entry point
+* largest_prime_factor -kfksfksfss
 * Description: finds and print the largest prime
 * factor of number (num)
 * @num: input
