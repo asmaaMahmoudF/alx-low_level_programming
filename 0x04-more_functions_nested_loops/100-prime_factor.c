@@ -44,8 +44,8 @@ printf("%d\n", largest);
 }
 
 /**
- * main -Entry point
- *
+* main -Entry point
+*
 * Return: 0 success
 */
 int main(void)
