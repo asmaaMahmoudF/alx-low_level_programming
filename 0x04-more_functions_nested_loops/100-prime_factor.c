@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
 * _sqrt -kdlksnsdnls
 * Description: finds the squre root
@@ -51,5 +51,6 @@ printf("%d\n", largest);
 int main(void)
 {
 largest_prime_factor(612852475143);
+
 return (0);
 }
