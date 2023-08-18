@@ -1,46 +1,54 @@
 #include <stdio.h>
-
 /**
- * print_triangle -Entry point
-* Description: print_triangle prints square
+* _sqrt -Entry point
+* Description: finds the squre root
 * @size: input
-* Return: void
+* Return: the squre of size
 */
 
-void print_triangle(int size)
+void _sqrt(double size)
 {
-int i, j;
-if (size <= 0)
+float sqr, tmp;
+sqr = size / 2;
+tmp = 0;
+while (sqr != tmp)
 {
-_putchar('\n');
+tmp = sqr;
+sqr = (size / tmp + tmp) / 2;
 }
-else if (size > 0)
-{
-for (i = 1; i <= size; i++)
-{
-for (j = 1; j <= size; j++)
-{
-if ((i + j) <= size)
-_putchar(32);
-else
-_putchar('#');
+return (sqr);
 }
-_putchar('\n');
-}
-}
-}
+/**
+* largest_prime_factor -Entry point
+* Description: finds and print the largest prime
+* factor of number (num)
+* @num: input
+* Return: void
+*/
 void largest_prime_factor(long int num)
 {
 int Prnum, largest;
 while (num % 2 == 0)
-
+num = num / 2;
+for (Prnum = 3; Prnum <= _sqrt(num); Prnum += 2)
+{
+while (num % Prnum == 0)
+{
+num = num / Prnum;
+largest = Prnum;
 }
+}
+if (num > 2)
+largest = num;
+printf("%d\n", largest);
+}
+
 /**
  * main -Entry point
  *
 * Return: 0 success
 */
-int main ()
+int main(void)
 {
 largest_prime_factor(612852475143);
 return (0);
