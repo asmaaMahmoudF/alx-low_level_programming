@@ -19,6 +19,7 @@ if (*a == '\0')
 {
 printf("\n");
 printf("\n");
+_putchar('\n');
 }
 else if (i != (n - 1))
 {
