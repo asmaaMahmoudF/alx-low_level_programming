@@ -15,13 +15,7 @@ void print_array(int *a, int n)
 int i = 0;
 while (i < n)
 {
-if (*a == '\0')
-{
-printf("\n");
-printf("\n");
-_putchar('\n');
-}
-else if (i != (n - 1))
+if (i != (n - 1))
 {
 printf("%d, ", a[i]);
 _putchar('\n');
@@ -32,5 +26,11 @@ printf("%d", a[i]);
 _putchar('\n');
 }
 i++;
+if (n  == 0)
+{
+printf("\n");
+printf("\n");
+_putchar('\n');
+}
 }
 }
