@@ -1,44 +1,21 @@
 #include "main.h"
 
 /**
-* puts_half -Entry point
-* Description: puts_half prints half of a string followed by a new line.
+* *_strcpy -Entry point
+* Description: *_strcpy prints half of a string followed by a new line.
 *
-* @str: input parameter
+* @src: input parameter
+* @dest: input parameter
 *
-* Return: void
+* Return: character
 */
 
-void puts_half(char *str)
+char *_strcpy(char *dest, char *src)
 {
-int i = 0;
-while (*(str + i) != '\0')
+int i = -1;
+do {
 i++;
-i++;
-
-for (i = i / 2; *(str + i) != '\0' ; i++)
-_putchar(*(str + i));
-_putchar('\n');
-}
-#include "main.h"
-
-/**
-* puts_half -Entry point
-* Description: puts_half prints half of a string followed by a new line.
-*
-* @str: input parameter
-*
-* Return: void
-*/
-
-void puts_half(char *str)
-{
-int i = 0;
-while (*(str + i) != '\0')
-i++;
-i++;
-
-for (i = i / 2; *(str + i) != '\0' ; i++)
-_putchar(*(str + i));
-_putchar('\n');
+dest[i] = src[i];
+} while (src[i] != '\0');
+return (dest);
 }
