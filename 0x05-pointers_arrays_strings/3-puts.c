@@ -2,7 +2,7 @@
 
 /**
 * _puts -Entry point
-* Description: _puts swaps the values of two integers
+* Description: _puts prints a string, followed by a new line
 *
 * @str: input parameter
 *
