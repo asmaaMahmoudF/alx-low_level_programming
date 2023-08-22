@@ -21,10 +21,15 @@ printf("\n");
 printf("\n");
 }
 else if (i != (n - 1))
+{
 printf("%d, ", a[i]);
+_putchar('\n');
+}
 else
+{
 printf("%d", a[i]);
+_putchar('\n');
+}
 i++;
 }
-_putchar('\n');
 }
