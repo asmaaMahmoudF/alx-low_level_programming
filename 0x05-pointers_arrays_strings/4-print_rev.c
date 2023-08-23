@@ -1,7 +1,8 @@
 #include "main.h"
 /**
 * print_rev -Entry point
-* Description: print_rev returns the length of a string
+* Description: print_rev prints a string, in reverse
+* followed by a new line.
 *
 * @s: input
 *
