@@ -7,7 +7,7 @@
 *
 * Return: void
 */
-void _puts(char *s)
+void print_rev(char *s)
 {
 int i;
 while (s[i])
