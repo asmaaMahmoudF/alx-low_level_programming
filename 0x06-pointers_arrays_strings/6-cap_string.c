@@ -55,5 +55,5 @@ else
 founfdelimiter = 0;
 s++;
 }
-return (str);
+return (ptr);
 }
