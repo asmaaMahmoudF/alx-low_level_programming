@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 * islower - changes alli
 * lowercase letters  to uppercase
