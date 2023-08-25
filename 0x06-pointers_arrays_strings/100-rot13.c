@@ -6,7 +6,6 @@
 */
 char *rot13(char *s)
 {
-char *cp = s;
 char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 int i;
