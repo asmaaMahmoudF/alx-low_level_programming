@@ -1,59 +1,62 @@
 #include "main.h"
-#include <stdio.h>
-/**
-* islower - changes alli
-* lowercase letters  to uppercase
-* @c: input
-* Return: int
-*/
-int islower(char c)
-{
-return (c >= 97 && c <= 122);
-}
 
 /**
-* isDelimiter - changes all
-* lowercase letters  to uppercase
-* @c: input
-* Return: int
-*/
+ *_strlen - reset number
+ *Description: This function return a length for some string
+ *@s: pointer char
+ *Return: int length
+ */
 
-int isDelimiter(char c)
+int _strlen(char *s)
 {
-int i;
-char delimiter[] = " \t\n,.!?\"()[]";
-for (i = 0; i < 12; i++)
-{
-if (c == delimiter[i])
-return (1);
+	int len = 0;
+
+	while (*s++)
+	{
+		len++;
+	}
+	return (len);
 }
-return (0);
-}
-
-
-
 /**
-* cap_string - changes all
-* lowercase letters of a string to uppercase
-* @str: input
-* Return: char
-*/
-char *cap_string(char *str)
+ *cap_string - changes all lowercase letters
+ *@s1: pointer parameter"
+ *Description: changes all lowercase letters
+ *Return: return pointer
+ */
+char *cap_string(char *s1)
 {
-char *ptr = str;
-int founfdelimiter = 1;
-while (*str)
-{
-if (isDelimiter(*str))
-founfdelimiter = 1;
-else if (islower(*str) && founfdelimiter)
-{
-*str -= 32;
-founfdelimiter = 0;
-}
-else
-founfdelimiter = 0;
-str++;
-}
-return (ptr);
+	int i, j;
+
+	for (i = 0; i < _strlen(s1) - 1; i++)
+	{
+		if (
+			s1[i] == ' ' ||
+			s1[i] == '\t' ||
+			s1[i] == '\n' ||
+			s1[i] == ',' ||
+			s1[i] == ';' ||
+			s1[i] == '.' ||
+			s1[i] == '!' ||
+			s1[i] == '?' ||
+			s1[i] == '"' ||
+			s1[i] == '(' ||
+			s1[i] == ')' ||
+			s1[i] == '{' ||
+			s1[i] == '}' ||
+			i == 0
+		)
+		{
+			for (j = 'a'; j <= 'z'; j++)
+			{
+				if (s1[i + 1] == j && i != 0)
+				{
+					s1[i + 1] = j - 32;
+				} else if (s1[i] == j && i == 0)
+				{
+					s1[i] = j - 32;
+				}
+			}
+		}
+	}
+	return (s1);
 }
