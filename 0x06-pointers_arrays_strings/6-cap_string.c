@@ -44,16 +44,16 @@ char *ptr = str;
 int founfdelimiter = 1;
 while (*str)
 {
-if (isDelimiter(*s))
+if (isDelimiter(*str))
 founfdelimiter = 1;
-else if (islower(*s) && founfdelimiter)
+else if (islower(*str) && founfdelimiter)
 {
-*s -= 32;
+*str -= 32;
 founfdelimiter = 0;
 }
 else
 founfdelimiter = 0;
-s++;
+str++;
 }
 return (ptr);
 }
