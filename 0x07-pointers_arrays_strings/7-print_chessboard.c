@@ -15,6 +15,6 @@ for (jtr = 0; jtr < 8; jtr++)
 {
 _putchar(a[str][jtr]);
 }
-_putchar('\0');
+_putchar('\n');
 }
 }
