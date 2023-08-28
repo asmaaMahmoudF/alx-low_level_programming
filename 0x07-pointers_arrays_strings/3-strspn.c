@@ -1,18 +1,21 @@
 #include "main.h"
 
 /**
-* _memset -  fills memory with a constant byte
+* _strspn - gets the length of a prefix substring
 * @s: input
-* @b: input
-* @n: input
-* Return: char
+* @accept: input
+* Return: int
 */
-char *_memset(char *s, char b, unsigned int n)
+unsigned int _strspn(char *s, char *accept)
 {
-unsigned int str;
-for (str = 0; n > 0; n--)
+unsigned int str, jtr;
+for (str = 0; s[str] != '\0'; str++)
 {
-s[str] = b;
+for (jtr = 0; accept[jtr] != s[str]; jtr++)
+{
+if (accept[jtr] == '\0')
+return (str);
 }
-return (s);
+}
+return (str);
 }
