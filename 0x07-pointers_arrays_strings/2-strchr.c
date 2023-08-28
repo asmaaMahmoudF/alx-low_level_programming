@@ -13,7 +13,7 @@ for (str = 0; s[str] >= '\0' ; str++)
 {
 if (s[str] == c)
 {
-return (c + str);
+return (s + str);
 }
 }
 return ('\0');
