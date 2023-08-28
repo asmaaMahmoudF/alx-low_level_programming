@@ -10,7 +10,6 @@
 void print_diagsums(int *a, int size)
 {
 int str, s1 = 0, s2 = 0;
-char *p;
 for (str = 0; str < size ; str++)
 {
 s1 += a[str];
