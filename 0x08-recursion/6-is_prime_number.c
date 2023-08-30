@@ -7,9 +7,9 @@
 */
 int checker(int n, int rm)
 {
-if (rm >= n && n >= 2)
-return (1);
-else if (n % rm == 0 || n < 0)
+if (rm == n)
+	return (1);
+if (!(n % rm))
 return (0);
 
 return (checker(n, rm + 1));
@@ -22,5 +22,7 @@ return (checker(n, rm + 1));
 */
 int is_prime_number(int n)
 {
+if (n < 2)
+	return (0);
 return (checker(n, 2));
 }
