@@ -31,8 +31,6 @@ return (1);
 if (s[len] == s[count])
 return (checker(s, len - 1, count + 1));
 return (0);
-
-return (checker(n, rm + 1));
 }
 /**
 * is_palindrome -returns 1 if a string is a palindrome and 0 if not
