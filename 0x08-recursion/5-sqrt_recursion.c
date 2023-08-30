@@ -12,7 +12,7 @@ return (-1);
 else if (base * base == n)
 return (base);
 else if ((base * base < n)
-return (checker(n, base - 1));
+return (checker(n, base + 1));
 }
 /**
 * _sqrt_recursion - returns the natural square root of a number
