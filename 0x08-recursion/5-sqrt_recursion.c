@@ -7,11 +7,11 @@
 */
 int checker(int n, int base)
 {
-if (n < 0)
+if (base * base  > n)
 return (-1);
 else if (base * base == n)
 return (base);
-else if ((base * base < n)
+
 return (checker(n, base + 1));
 }
 /**
