@@ -8,9 +8,17 @@
 int _pow_recursion(int x, int y)
 {
 int ntr = 0;
-if (*s != '\0')
+if (y < 0)
 {
-ntr += _strlen_recursion(s + 1) + 1;
+return (-1);
 }
-return (ntr);
+if (y == 1)
+{
+return (1);
+}
+if (y == 0)
+{
+return (1);
+}
+return (x * _pow_recursion(x, y - 1));
 }
