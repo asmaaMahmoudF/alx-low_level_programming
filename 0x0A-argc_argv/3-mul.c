@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
 * main - entry point multiplies two numbers
 * @argc: number of command line arguments
