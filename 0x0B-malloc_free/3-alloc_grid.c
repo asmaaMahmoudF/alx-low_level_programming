@@ -28,6 +28,7 @@ return (NULL);
 }
 for (j = 0; j < width; j++)
 tab[i][j] = 0;
+i++;
 }
 }
 return (tab);
