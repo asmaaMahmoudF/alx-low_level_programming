@@ -31,7 +31,7 @@ s1 = '\0';
 if (s2 == NULL)
 s2 = '\0';
 size1 = _strlen(s1);
-size1 = _strlen(s2);
+size2 = _strlen(s2);
 
 p = malloc((size1 + size2) * sizeof(*s1) + 1);
 if (p == 0)
