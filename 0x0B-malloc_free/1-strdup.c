@@ -15,7 +15,7 @@ if (str == NULL)
 return (NULL);
 while (str[size] != '\0')
 size++;
-p = mallco(size *sizeof(*str) + 1);
+p = malloc(size *sizeof(*str) + 1);
 if (p == 0)
 return (NULL);
 else
