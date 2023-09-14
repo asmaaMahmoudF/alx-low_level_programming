@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
 * main - that searches for an integer
 * @argc: the size of the argument vector
