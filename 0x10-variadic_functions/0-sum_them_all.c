@@ -17,7 +17,7 @@ if (n == 0)
 va_start(ar, n);
 for (i = 0; i < n; i++)
 {
-sum += va_arg(ar, (const unsigned int);
+sum += va_arg(ar, const unsigned int);
 }
 va_end(ar);
 return (sum);
