@@ -1,0 +1,22 @@
+#include "variadic_functions.h"
+#include <stdio.h>
+/**
+* sum_them_all -  writes the character c to stdout
+* @n: unsigned int
+* Return: int
+*/
+
+int sum_them_all(const unsigned int n, ...)
+{
+va_list ar;
+int i, sum;
+
+va_start(ar, n);
+for (i = 0; i < n; i++)
+{
+sum += va_arg(ar, int);
+}
+va_end(ar);
+return (sum);
+}
+
