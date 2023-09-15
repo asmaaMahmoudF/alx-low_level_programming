@@ -12,15 +12,22 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list ar;
+char *sepra;
 unsigned int i, sum = 0;
-if (n == 0)
-	return (0);
+if (separator == NULL || *separator == 0)
+sepra = "";
+else
+sepra = (char *)separator;
+
 va_start(ar, n);
-for (i = 0; i < n; i++)
+
+if (n > 0)
+printf("%d", va_arg(ar, int));
+for (i = 1; i < n; i++)
 {
-sum += va_arg(ar, const unsigned int);
+printf("%s%d", sepra, va_arg(ar, int));
 }
+printf("\n");
 va_end(ar);
-return (sum);
 }
 
