@@ -13,7 +13,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list ar;
 char *sepra;
-unsigned int i, sum = 0;
+unsigned int i;
 if (separator == NULL || *separator == 0)
 sepra = "";
 else
