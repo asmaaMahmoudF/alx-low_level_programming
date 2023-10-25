@@ -6,8 +6,17 @@
  */
 void free_listint(listint_t *head)
 {
+	listint_t *p;
+	listint_t *current;
+
 	if (head == NULL)
-		return;
-	free_listint(head->next);
-	free(head);
+		return (NULL);
+	current = head;
+	while (current != NULL)
+	{
+		p = current;
+		current = current->next;
+		free(p);
+	}
+	head = NULL;
 }
