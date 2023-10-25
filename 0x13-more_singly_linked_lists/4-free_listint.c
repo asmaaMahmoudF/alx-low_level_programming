@@ -2,7 +2,7 @@
 /**
  * free_listint - adds a new node at the beginning of a listint_t list
  * @head: data type pointer of struct
- * Return: the address of the new element, or NULL if it failed
+ * Return: void
  */
 void free_listint(listint_t *head)
 {
