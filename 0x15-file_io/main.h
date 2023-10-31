@@ -18,13 +18,13 @@
  */
 typedef struct copy_struct
 {
-	char *from;
-	char *to;
-	ssize_t rd;
-	ssize_t wt;
-	int from_file;
-	int to_file;
-	char *buffer;
+    char *from;
+    char *to;
+    ssize_t rd;
+    ssize_t wt;
+    int from_file;
+    int to_file;
+    char *buffer;
 } copy_struct;
 
 ssize_t read_textfile(const char *filename, size_t letters);
