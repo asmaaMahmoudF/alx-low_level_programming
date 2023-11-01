@@ -7,21 +7,35 @@
  * Return: decimal (unsigned int)
  */
 
+#include <stdio.h>
+
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int decimal;
-	unsigned int i;
+	unsigned int dec_val = 0;
+	int base = 1; /* 2^0 = 1 */
 
-	for (decimal = 0, i = 0; b[i] != '\0'; i++)
+	/*Check for NULL string*/
+	if (!b)
+		return (0);
+
+	/* Find the length of the string to iterate from end to start */
+	const char *temp = b;
+
+	while (*temp)
+		temp++;
+
+	/* Begin conversion from binary to decimal */
+	while (--temp >= b)
 	{
-		if (b[i] == '1')
-			decimal = (decimal << 1) | 1;
-		else if (b[i] == '0')
-			decimal <<= 1;
-		else if (b[i] != '0' && b[i] != '1')
+		/* Check for invalid character in string */
+		if (*temp != '0' && *temp != '1')
 			return (0);
+
+		if (*temp == '1')
+			dec_val += base;
+
+		base *= 2;
 	}
 
-	return (decimal);
+	return (dec_val);
 }
-
