@@ -6,20 +6,17 @@
  *
  * Return: decimal (unsigned int)
  */
-
-#include <stdio.h>
-
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int dec_val = 0;
 	int base = 1; /* 2^0 = 1 */
+	/* Find the length of the string to iterate from end to start */
+	const char *temp = b;
 
 	/*Check for NULL string*/
 	if (!b)
 		return (0);
 
-	/* Find the length of the string to iterate from end to start */
-	const char *temp = b;
 
 	while (*temp)
 		temp++;
