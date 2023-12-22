@@ -1,5 +1,15 @@
 ---
 triple:          'x86_64-apple-darwin'
-binary-path:     './a.out'
-relocations:     []
+binary-path:     a.out
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003C70, symSize: 0xFC }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003C70, symSize: 0xFC }
+  - { offsetInCU: 0x26, offset: 0xDA, size: 0x8, addend: 0x0, symName: _add_nodeint_end, symObjAddr: 0x0, symBinAddr: 0x100003D70, symSize: 0xBF }
+  - { offsetInCU: 0x33, offset: 0xE7, size: 0x8, addend: 0x0, symName: _add_nodeint_end, symObjAddr: 0x0, symBinAddr: 0x100003D70, symSize: 0xBF }
+  - { offsetInCU: 0x26, offset: 0x1A6, size: 0x8, addend: 0x0, symName: _print_listint, symObjAddr: 0x0, symBinAddr: 0x100003E30, symSize: 0x5D }
+  - { offsetInCU: 0x41, offset: 0x1C1, size: 0x8, addend: 0x0, symName: _print_listint, symObjAddr: 0x0, symBinAddr: 0x100003E30, symSize: 0x5D }
+  - { offsetInCU: 0x26, offset: 0x291, size: 0x8, addend: 0x0, symName: _free_listint2, symObjAddr: 0x0, symBinAddr: 0x100003E90, symSize: 0x65 }
+  - { offsetInCU: 0x33, offset: 0x29E, size: 0x8, addend: 0x0, symName: _free_listint2, symObjAddr: 0x0, symBinAddr: 0x100003E90, symSize: 0x65 }
+  - { offsetInCU: 0x26, offset: 0x346, size: 0x8, addend: 0x0, symName: _pop_listint, symObjAddr: 0x0, symBinAddr: 0x100003F00, symSize: 0x7C }
+  - { offsetInCU: 0x33, offset: 0x353, size: 0x8, addend: 0x0, symName: _pop_listint, symObjAddr: 0x0, symBinAddr: 0x100003F00, symSize: 0x7C }
 ...
