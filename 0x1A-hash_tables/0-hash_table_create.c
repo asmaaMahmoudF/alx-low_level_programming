@@ -7,14 +7,14 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *new_table;
-	new_table = calloc(sizeof(hash_table_t));
-	if(!new_table)
+
+	new_table = calloc(1, sizeof(hash_table_t) * 1);
+	if (!new_table)
 		return (0);
 	new_table->size = size;
-	new_table->array = calloc(sizeof(hash_node_t *) * size);
+	new_table->array = calloc(size, sizeof(hash_node_t *));
 	if (!new_table->array)
 	{
-		free(new_table);
 		return (0);
 	}
 	return (new_table);
