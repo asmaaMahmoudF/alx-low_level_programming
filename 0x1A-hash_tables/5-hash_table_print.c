@@ -6,19 +6,24 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
- if (!ht)  // Check if the hash table is NULL
-return;
+	hash_node_t *node;
+	unsigned long int i, comma;
 
-putchar('{');
-for (unsigned long int i = 0, comma = 0; i < ht->size; i++) {  // Iterate over the array
-hash_node_t *node = ht->array[i];
-while (node != NULL) {  // Traverse the linked list at this index
-if (comma)  // Print a comma before all but the first element
-printf(", ");
-printf("'%s': '%s'", node->key, node->value);  // Print the key/value pair
-node = node->next;  // Move to the next node
-comma = 1;  // After the first element, set comma to 1
-}
-}
-puts("}");
+	if (!ht)
+		return;
+
+	putchar('{');
+	for (i = 0, comma = 0; i < ht->size; i++)
+	{
+		node = ht->array[i];
+		while (node != NULL)
+		{
+			if (comma)
+				printf(", ");
+			printf("'%s': '%s'", node->key, node->value);
+			node = node->next;
+			comma = 1;
+		}
+	}
+	puts("}");
 }
