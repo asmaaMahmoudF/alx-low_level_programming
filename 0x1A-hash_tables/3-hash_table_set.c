@@ -4,7 +4,7 @@
  * @key: is a key
  * @value:  is the value of uniqe key
  * @ht: the hash table
- * Return: hash value
+ * Return: it means sets well
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
