@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_list - returns the number of elements in a linked list_t list
+ * list_len - function that adds a new node at the beginning of a list_t list.
  * @h: input node list
  * Description: singly linked list node structure
  * Return: typedef struct list_s list_t
