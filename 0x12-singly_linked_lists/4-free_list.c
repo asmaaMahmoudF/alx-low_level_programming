@@ -1,18 +1,18 @@
 #include "lists.h"
 /**
- * free_list - returns the number of elements in a linked list_t list
- * @h: input node list
- * Description: singly linked list node structure
- * Return: typedef struct list_s list_t
+ * free_list - frees a list_t list.
+ * @head: input node list
+ * Return: void
  */
 void free_list(list_t *head)
 {
 	list_t *current = head;
 	list_t *tmp;
-	while(current != NULL)
+
+	while (current != NULL)
 	{
 		tmp = current->next;
-		
+
 		free(current->str);
 		free(current);
 
