@@ -6,12 +6,13 @@
  */
 size_t listint_len(const listint_t *h)
 {
-const listint_t *new_node = h;
-size_t i = 0;
-while (new_node)
-{
-new_node = new_node->next;
-i++;
-}
-return (i);
+	const listint_t *new_node = h;
+	size_t i = 0;
+	
+	while (new_node)
+	{
+		new_node = new_node->next;
+		i++;
+	}
+	return (i);
 }

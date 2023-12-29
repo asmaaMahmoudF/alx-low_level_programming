@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * print_listint - Print all the elements of a list_int list
  * @h: data type pointer of struct
