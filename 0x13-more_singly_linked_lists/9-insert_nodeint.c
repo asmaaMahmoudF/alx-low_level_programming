@@ -25,6 +25,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		current = current->next;
 		idx--;
+/*desired index is not valid and reached to the end of the lsit*/
 		if (!current)
 		{
 			free(new);
